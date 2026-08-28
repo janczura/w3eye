@@ -1,0 +1,12 @@
+{
+  "latest": "0.1.0",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "date": "2026-08-29",
+      "changes": [
+        "First example changelog entry"
+      ]
+    }
+  ]
+}

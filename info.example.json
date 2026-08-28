@@ -1,0 +1,9 @@
+{
+  "message": "",
+  "links": [
+    { "label": "Discord", "url": "https://discord.gg/your-invite" },
+    { "label": "Website", "url": "https://w3eye.janczura.dev" },
+    { "label": "Creator", "url": "https://janczura.dev" },
+    { "label": "Report a bug", "url": "https://github.com/janczura/w3eye/issues" }
+  ]
+}

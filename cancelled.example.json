@@ -1,0 +1,9 @@
+{
+  "revoked_keys": [
+    {
+      "key": "BASE64_LICENSE_STRING_TUTAJ",
+      "revoked_at": "2026-07-15T12:00:00Z",
+      "reason": "chargeback"
+    }
+  ]
+}
