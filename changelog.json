@@ -1,0 +1,12 @@
+{
+  "latest": "0.1.0",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "date": "2026-08-29",
+      "changes": [
+        "First release: live match / hero / item overlay from shared memory, W3Champions stats (MMR, win probability, scouting, H2H), fully configurable OBS feed, 6-minute trial + license keys, offline revocation check."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>w3eye</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141b28"/>
+      <stop offset="1" stop-color="#0a0d13"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#ffcf6b"/>
+      <stop offset="1" stop-color="#ff7a45"/>
+    </linearGradient>
+    <radialGradient id="iris" cx="0.5" cy="0.42" r="0.72">
+      <stop offset="0" stop-color="#ffe28f"/>
+      <stop offset="0.45" stop-color="#ffa23e"/>
+      <stop offset="0.8" stop-color="#f0652a"/>
+      <stop offset="1" stop-color="#c8471d"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff9a3c" stop-opacity="0.32"/>
+      <stop offset="0.7" stop-color="#ff9a3c" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ff9a3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pupil" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="1" stop-color="#0b0e14"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background tile -->
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <!-- amber halo behind the eye -->
+  <ellipse cx="32" cy="32" rx="27" ry="19" fill="url(#glow)"/>
+  <!-- faint sclera light inside the lids -->
+  <path d="M13 32 C21 22.5 43 22.5 51 32 C43 41.5 21 41.5 13 32 Z" fill="#ff9a3c" opacity="0.07"/>
+
+  <!-- eye lids: main + inner definition line -->
+  <path d="M10 32 C19 20 45 20 54 32 C45 44 19 44 10 32 Z" fill="none" stroke="url(#lid)" stroke-width="3.4" stroke-linejoin="round"/>
+  <path d="M14.5 32 C22.5 24 41.5 24 49.5 32 C41.5 40 22.5 40 14.5 32 Z" fill="none" stroke="#3a2b1a" stroke-width="1.1" opacity="0.55"/>
+
+  <!-- iris (3D) -->
+  <circle cx="32" cy="32" r="8" fill="url(#iris)"/>
+  <circle cx="32" cy="32" r="7.35" fill="none" stroke="#a5381a" stroke-width="0.85" opacity="0.55"/>
+  <circle cx="32" cy="32" r="5.8" fill="none" stroke="#ffd58a" stroke-width="0.7" opacity="0.45"/>
+  <!-- iris fibers -->
+  <g stroke="#c2541f" stroke-width="0.6" opacity="0.5" stroke-linecap="round">
+    <line x1="32" y1="24.9" x2="32" y2="27.4"/>
+    <line x1="32" y1="36.6" x2="32" y2="39.1"/>
+    <line x1="24.9" y1="32" x2="27.4" y2="32"/>
+    <line x1="36.6" y1="32" x2="39.1" y2="32"/>
+    <line x1="27" y1="27" x2="28.9" y2="28.9"/>
+    <line x1="35.1" y1="35.1" x2="37" y2="37"/>
+    <line x1="37" y1="27" x2="35.1" y2="28.9"/>
+    <line x1="28.9" y1="35.1" x2="27" y2="37"/>
+  </g>
+
+  <!-- pupil -->
+  <circle cx="32" cy="32" r="3.5" fill="url(#pupil)"/>
+  <circle cx="32" cy="32" r="3.5" fill="none" stroke="#5a1c0c" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- highlights -->
+  <circle cx="34.4" cy="29.3" r="1.8" fill="#ffffff" opacity="0.95"/>
+  <circle cx="29.7" cy="34.3" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="31.2" cy="30.8" r="0.5" fill="#ffffff" opacity="0.8"/>
+
+  <!-- top-lid gloss -->
+  <path d="M16 30.5 C23.5 24.5 40.5 24.5 48 30.5" fill="none" stroke="#ffe0a0" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- border -->
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="14.25" fill="none" stroke="#2f3a4c" stroke-width="1.5"/>
+</svg>

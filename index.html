@@ -3,30 +3,172 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>w3eye</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #0f1115;
-    color: #e8e8ea;
-    font-family: system-ui, -apple-system, Segoe UI, sans-serif;
-    text-align: center;
-  }
-  h1 { font-size: 2.2rem; margin: 0 0 .5rem; letter-spacing: .02em; }
-  p { color: #9a9aa2; margin: 0; }
-  a { color: inherit; }
-</style>
+<title>w3eye — Warcraft III overlay for OBS</title>
+<meta name="description" content="w3eye is a Windows overlay for Warcraft III streaming. Real-time match, hero and item data from the game's shared memory plus W3Champions stats, fully configurable and fed to OBS.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    <h1>w3eye</h1>
-    <p>Warcraft III overlay for OBS — coming soon.</p>
-    <p><a href="https://janczura.dev">janczura.dev</a></p>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="./"><span class="eye" aria-hidden="true"></span>w3eye</a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+    </nav>
   </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Warcraft III &middot; overlay for streamers</p>
+        <h1>See the match<br><span class="accent">exactly</span> the way it happens.</h1>
+        <p class="lede">
+          w3eye reads real-time match, hero and item data straight from the game&rsquo;s
+          official shared memory, layers on W3Champions stats, and hands a clean,
+          configurable overlay to OBS. No guessing, no lag.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="downloads/w3eye-windows-x86_64.exe">
+            <span class="dl-icon" aria-hidden="true"></span>Download for Windows
+          </a>
+          <a class="btn ghost" href="#how">How it works</a>
+        </div>
+      </div>
+      <div class="hero-preview" aria-hidden="true">
+        <div class="ov">
+          <div class="ov-top">
+            <span class="ov-clock">00:47</span>
+            <span class="ov-tag">Team Match</span>
+          </div>
+          <div class="ov-row">
+            <div class="ov-card">
+              <span class="ov-race t">T</span>
+              <span class="ov-meta"><b>Player One</b><i>MMR 2450</i></span>
+            </div>
+            <span class="ov-vs">VS</span>
+            <div class="ov-card r">
+              <span class="ov-meta"><b>Player Two</b><i>MMR 2380</i></span>
+              <span class="ov-race z">Z</span>
+            </div>
+          </div>
+          <div class="ov-wp"><span style="width:58%"></span></div>
+          <div class="ov-wpl"><span>58%</span><span>42%</span></div>
+          <div class="ov-foot"><span>3 / 4 heroes</span><span>0:12 to next</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2>Everything you can see, in real time</h2>
+    <p class="section-sub">Two data sources that don&rsquo;t replace each other &mdash; the game&rsquo;s own shared memory and the W3Champions ladder backend.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Live match panel</h3>
+        <p>Players, races, map, mode and the exact match clock, read from shared memory the instant the game updates it.</p>
+      </div>
+      <div class="card">
+        <h3>Heroes, items &amp; APM</h3>
+        <p>Live hero, item, structure and APM data &mdash; none of it available to the other overlays out there.</p>
+      </div>
+      <div class="card">
+        <h3>W3Champions stats</h3>
+        <p>MMR, league, division, season rank, match history, win probability and opponent scouting, pulled from the ladder API.</p>
+      </div>
+      <div class="card">
+        <h3>Head-to-head &amp; streaks</h3>
+        <p>Local history builds your H2H record, scoreboard and win streaks over time, no account needed.</p>
+      </div>
+      <div class="card">
+        <h3>Fully configurable</h3>
+        <p>Toggle any element, cycle it on a timer, drag it anywhere and scale it &mdash; with a live preview in the settings panel.</p>
+      </div>
+      <div class="card">
+        <h3>One-click into OBS</h3>
+        <p>A local server serves the overlay. Point any OBS Browser Source at the URL and you&rsquo;re streaming.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section alt">
+    <h2>Up and streaming in three steps</h2>
+    <ol class="steps">
+      <li>
+        <span class="num">1</span>
+        <h3>Launch &amp; sign in</h3>
+        <p>Run the .exe and start the 6-minute trial, or enter your license key. The app checks the key online on startup.</p>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <h3>Configure the overlay</h3>
+        <p>Pick your elements, positions, cycles and scales. The preview updates live as you go.</p>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <h3>Point OBS at it</h3>
+        <p>Add a Browser Source to the local URL. w3eye streams the overlay and match data straight into your scene.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="download" class="section">
+    <h2>Download</h2>
+    <div class="dl-box">
+      <div class="dl-main">
+        <p class="ver">Latest release <span class="pill">v0.1.0</span></p>
+        <a class="btn primary big" href="downloads/w3eye-windows-x86_64.exe">
+          <span class="dl-icon" aria-hidden="true"></span>w3eye-windows-x86_64.exe
+        </a>
+        <p class="sha">SHA-256 will be published here on release.</p>
+      </div>
+      <div class="dl-req">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Windows 10 / 11 (x64)</li>
+          <li>Warcraft III</li>
+          <li>A W3Champions account for ladder stats</li>
+          <li>OBS (for streaming the overlay)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>What does the trial give me?</summary>
+        <p>The first launch is a full-featured 6-minute trial &mdash; no feature is locked. After it ends you&rsquo;ll need a license key. There&rsquo;s no permanent free tier.</p>
+      </details>
+      <details>
+        <summary>Why does it need an internet connection?</summary>
+        <p>On startup w3eye fetches the current list of revoked license keys and a trusted server time. Both keep licensing honest and stop a stale key from running forever. Game data itself comes locally from shared memory.</p>
+      </details>
+      <details>
+        <summary>Where does the data come from?</summary>
+        <p>Match, hero, item and clock data is read from the game&rsquo;s official <code>War3StatsObserverSharedMemory</code> &mdash; zero polling, instant. MMR, league, history and scouting come from the W3Champions REST API.</p>
+      </details>
+      <details>
+        <summary>Does it work in observer / battle.net play?</summary>
+        <p>Yes &mdash; anywhere the shared memory is present (in a game or in observation). That&rsquo;s exactly what makes the instant, accurate data possible.</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <span>&copy; 2026 w3eye</span>
+    <span class="foot-links">
+      <a href="https://janczura.dev">janczura.dev</a>
+      <a href="changelog.json">Changelog</a>
+    </span>
+  </div>
+</footer>
 </body>
 </html>
