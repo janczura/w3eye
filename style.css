@@ -261,7 +261,7 @@ h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin: 0 0 0.5rem; letter-spacing
   font-size: 0.85rem;
   margin-left: 0.4rem;
 }
-.sha { color: var(--muted); font-size: 0.85rem; margin-top: 1.1rem; }
+.sha { color: var(--muted); font-size: 0.85rem; margin-top: 1.1rem; overflow-wrap: anywhere; }
 .dl-req h3 { margin-top: 0; }
 .dl-req ul { margin: 0.6rem 0 0; padding-left: 1.1rem; color: var(--muted); }
 .dl-req li { margin: 0.35rem 0; }

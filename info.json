@@ -1,7 +1,17 @@
 {
   "message": "",
   "links": [
-    { "label": "Website", "url": "https://w3eye.janczura.dev" },
-    { "label": "Creator", "url": "https://janczura.dev" }
+    {
+      "label": "Website",
+      "url": "https://w3eye.janczura.dev"
+    },
+    {
+      "label": "Creator",
+      "url": "https://janczura.dev"
+    },
+    {
+      "label": "Discord",
+      "url": "https://discord.gg/d2T7w6DmTv"
+    }
   ]
 }
