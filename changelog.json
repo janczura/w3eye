@@ -1,6 +1,18 @@
 {
-  "latest": "0.1.0",
+  "latest": "0.2.0",
   "entries": [
+    {
+      "version": "0.2.0",
+      "date": "2026-10-25",
+      "changes": [
+        "Army on the overlay: gold, lumber, food, workers, finished upgrades, units by type and heroes with level, skills and items, shown under each player row.",
+        "Fair play: while you play, the overlay shows only your own army. Opponents' armies and economy appear only when you are observing or watching a replay.",
+        "Observer detection: observing a game and W3Champions watch mode are recognised automatically. A new \"Observing or watching replays\" switch covers local replays.",
+        "Draws: games agreed with -draw are now recorded as draws instead of losses, in the daily record, match history and head-to-head. The daily panel shows them separately.",
+        "W3Champions is recognised from its launcher, so custom and AI games there are attributed to the right platform.",
+        "More reliable player name and lineup detection, especially in lobbies with many computer slots."
+      ]
+    },
     {
       "version": "0.1.0",
       "date": "2026-08-29",
