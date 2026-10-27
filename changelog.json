@@ -1,6 +1,19 @@
 {
-  "latest": "0.2.0",
+  "latest": "0.3.0",
   "entries": [
+    {
+      "version": "0.3.0",
+      "date": "2026-10-27",
+      "changes": [
+        "Presets: keep several complete layouts and run them all at once, each on its own port (4140, 4141, …). Point each OBS scene at its own preset's URL, e.g. the full overlay while playing and chat only while talking. Nothing to switch during a stream.",
+        "New panels: Units (each player's army by unit type, largest first) and APM (actions per minute). Both start switched off, so updating does not disturb an existing OBS layout.",
+        "Hero panel now works: level, experience, learnt skills and items for each hero.",
+        "Real names and icons instead of game codes (Blademaster instead of Obla), read from your own Warcraft III install in your language, including upgrades. Works offline. Without an install, English names cover the melee units, heroes, abilities and items.",
+        "The row under each player in the match panel now shows only the economy (gold, lumber, food, workers, upgrades). Units and heroes have their own panels.",
+        "Chat: optional Twitch / YouTube icon before each name, in brand colours or in the overlay's accent colour.",
+        "Fair play still applies to the new panels: while you play, only your own slot is shown."
+      ]
+    },
     {
       "version": "0.2.0",
       "date": "2026-10-25",
